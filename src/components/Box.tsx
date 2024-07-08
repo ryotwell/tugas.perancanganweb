@@ -1,7 +1,8 @@
+import * as React from 'react'
 import clsx from 'clsx'
-import { HtmlHTMLAttributes } from 'react'
+import { BoxProps } from '@/types/box'
 
-function BoxIcon({ className }: HtmlHTMLAttributes<HTMLDivElement>) {
+const BoxIcon: React.FC<BoxProps> = ({ className }) => {
     return (
         <>
             <svg

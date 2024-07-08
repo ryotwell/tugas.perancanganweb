@@ -1,4 +1,4 @@
-import { NavType } from '@/types/Layout'
+import { NavType } from '@/types/layout'
 import Link from 'next/link'
 
 const navs: NavType[] = [

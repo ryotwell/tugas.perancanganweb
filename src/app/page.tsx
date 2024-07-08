@@ -29,6 +29,7 @@ const Home = () => {
             </UnstyledLink>
 
             <div
+                id="intro"
                 data-aos="fade-up"
                 className="content mt-56 lg:mt-0 relative lg:flex lg:justify-center"
             >
@@ -133,7 +134,7 @@ const HeroComponent = () => {
                         className="space-x-4"
                     >
                         <UnstyledLink
-                            href={'https://google.com'}
+                            href={'https://twitter.com/ryotwell'}
                             className={clsx(
                                 'inline-flex items-center gap-1 text-sm font-medium md:text-base',
                                 'group text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white',
@@ -145,7 +146,7 @@ const HeroComponent = () => {
                             <span>{`@ryotwell`}</span>
                         </UnstyledLink>
                         <UnstyledLink
-                            href={'https://google.com'}
+                            href={'https://github.com/ryotwell'}
                             className={clsx(
                                 'inline-flex items-center gap-1 text-sm font-medium md:text-base',
                                 'text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white',

@@ -30,6 +30,12 @@ export default function RootLayout({
                     fontSans.variable,
                 )}
             >
+                {/* <ProgressBar
+                    height="4px"
+                    color="#fffd00"
+                    options={{ showSpinner: false }}
+                    shallowRouting
+                /> */}
                 <Header />
                 <main className="mt-20 lg:mt-20">{children}</main>
                 <Footer />
