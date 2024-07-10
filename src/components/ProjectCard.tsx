@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import React from 'react'
-import { ProjectsProps, ProjectType } from '@/types/project'
+import * as React from 'react'
+import { CardLinkProps, ProjectsProps, ProjectType } from '@/types/project'
 import Stacks from './Stacks'
 import clsx from 'clsx'
 import UnstyledLink from './links/UnstyledLink'
@@ -28,6 +28,14 @@ export const projects: ProjectType[] = [
     },
 ]
 
+export const CardLink: React.FC<CardLinkProps> = ({ children, url }) => {
+    return (
+        <UnstyledLink href={url as string} openNewTab={true}>
+            {children}
+        </UnstyledLink>
+    )
+}
+
 const ProjectCard: React.FC<ProjectsProps> = ({
     name,
     tech_stack,
@@ -39,15 +47,15 @@ const ProjectCard: React.FC<ProjectsProps> = ({
     ...props
 }) => {
     return (
-        <UnstyledLink href={url as string} openNewTab={true}>
+        <CardLink url={url as string}>
             <Card
                 className={clsx([
-                    'border-none shadow-md hover:scale-105 duration-300 bg-white dark:bg-background dark:shadow-slate-800',
+                    'border-none bg-white shadow-md duration-300 hover:scale-105 dark:bg-background dark:shadow-slate-800',
                     className,
                 ])}
                 {...props}
             >
-                <img className="rounded-t-lg h-48 w-full" src={thumbnail} />
+                <img className="h-48 w-full rounded-t-lg" src={thumbnail} />
                 <CardHeader>
                     <CardTitle className="text-xl">{name}</CardTitle>
                 </CardHeader>
@@ -55,12 +63,12 @@ const ProjectCard: React.FC<ProjectsProps> = ({
                     <div className="mb-6 flex space-x-4">
                         <Stacks tech_stack={tech_stack} icon_size={icon_size} />
                     </div>
-                    <p className="antialiased text-slate-950/70 dark:text-slate-100/70">
+                    <p className="text-slate-950/70 antialiased dark:text-slate-100/70">
                         {description}
                     </p>
                 </CardContent>
             </Card>
-        </UnstyledLink>
+        </CardLink>
     )
 }
 

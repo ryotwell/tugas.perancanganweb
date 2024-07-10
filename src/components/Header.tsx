@@ -27,16 +27,16 @@ function Header() {
     return (
         <>
             {/* <div className="h-2 bg-gradient-to-r from-blue-400 via-pink-300 to-blue-800 z-40 fixed top-0 w-full" /> */}
-            <div className="h-2 bg-gradient-to-tr from-primary-200 via-primary-300 to-primary-400 z-40 fixed top-0 w-full" />
+            <div className="fixed top-0 z-40 h-2 w-full bg-gradient-to-tr from-primary-200 via-primary-300 to-primary-400" />
 
-            <div className="content flex justify-between fixed top-2 w-full z-40 backdrop-blur-xl bg-white dark:bg-background">
+            <div className="content fixed top-2 z-40 flex w-full justify-between bg-white backdrop-blur-xl dark:bg-background">
                 <ul className="flex space-x-4">
                     {navs.map((x, key) => {
                         return (
                             <li key={key}>
                                 <Link
                                     href={x.path}
-                                    className="antialiased font-medium text-sm lg:text-base"
+                                    className="text-sm font-medium antialiased lg:text-base"
                                 >
                                     <span
                                         className={clsx(

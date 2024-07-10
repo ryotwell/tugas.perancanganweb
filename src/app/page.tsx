@@ -35,20 +35,20 @@ const Home = () => {
             <div
                 id="intro"
                 data-aos="fade-up"
-                className="content mt-56 lg:mt-0 relative lg:flex lg:justify-center"
+                className="content relative mt-56 lg:mt-0 lg:flex lg:justify-center"
             >
-                <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
-                    <h1 className="font-bold text-4xl lg:text-6xl text-primary mb-6 max-w-md">
+                <div className="mb-10 w-full lg:mb-0 lg:w-1/2">
+                    <h1 className="mb-6 max-w-md text-4xl font-bold lg:text-6xl">
                         Rebuild your mental model
                     </h1>
-                    <p className="antialiased text-slate-950/70 dark:text-slate-100/70">
+                    <p className="text-slate-950/70 antialiased dark:text-slate-100/70">
                         {`Mental model will make front-end development more
                         predictable by seeing how they work fundamentally. In my
                         blog, I'm sharing how I approach something and how my
                         mental model affect my learning about a certain topic.`}
                     </p>
                 </div>
-                <div className="w-full lg:w-1/2 flex justify-center">
+                <div className="flex w-full justify-center lg:w-1/2">
                     <ProjectsIntroComponent />
                 </div>
             </div>
@@ -57,9 +57,9 @@ const Home = () => {
                     <h1 className="text-4xl font-bold text-primary">
                         Projects
                     </h1>
-                    <p className="antialiased text-slate-950/70 dark:text-slate-100/70">{`Some projects that I'm proud of`}</p>
+                    <p className="text-slate-950/70 antialiased dark:text-slate-100/70">{`Some projects that I'm proud of`}</p>
                 </div>
-                <ul className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-6">
+                <ul className="mb-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
                     {projects.map((x, key) => {
                         return (
                             <li key={key}>
@@ -81,18 +81,18 @@ const Home = () => {
 const HeroComponent = () => {
     return (
         <>
-            <div className="lg:h-screen lg:flex lg:items-center">
-                <div className="content lg:h-1/2 w-full relative">
-                    <div className="z-10 relative">
+            <div className="lg:flex lg:h-screen lg:items-center">
+                <div className="content relative w-full lg:h-1/2">
+                    <div className="relative z-10">
                         <h1
-                            className="font-bold text-2xl lg:text-5xl"
+                            className="text-2xl font-bold lg:text-5xl"
                             data-aos="fade-up"
                             data-aos-delay="300"
                         >
                             Hi!
                         </h1>
                         <h1
-                            className="font-bold text-3xl lg:text-6xl mb-4"
+                            className="mb-4 text-3xl font-bold lg:text-6xl"
                             data-aos="fade-up"
                             data-aos-delay="400"
                         >
@@ -108,7 +108,7 @@ const HeroComponent = () => {
                             </span>
                         </div>
                         <p
-                            className="mb-6 max-w-4xl antialiased text-slate-950/70 dark:text-slate-100/70"
+                            className="mb-6 max-w-4xl text-slate-950/70 antialiased dark:text-slate-100/70"
                             data-aos="fade-up"
                             data-aos-delay="500"
                         >
@@ -117,13 +117,12 @@ const HeroComponent = () => {
                             concepts through mental models.
                         </p>
                         <p
-                            className="mb-6 max-w-4xl antialiased text-slate-950/70 dark:text-slate-100/70"
+                            className="mb-6 max-w-4xl text-slate-950/70 antialiased dark:text-slate-100/70"
                             data-aos="fade-up"
                             data-aos-delay="600"
                         >
-                            {`Don't forget to sign my`}{' '}
-                            <CustomLink href="/guestbook">guestbook</CustomLink>
-                            !
+                            {`Don't forget to follow My`}{' '}
+                            <CustomLink href="#footer">Twitter</CustomLink>!
                         </p>
                         <div className="space-x-4">
                             <Button
@@ -176,7 +175,7 @@ const HeroComponent = () => {
                         </div>
                     </div>
                 </div>
-                <Spotlight className="absolute top-0 z-50" />
+                <Spotlight className="absolute top-0 z-50 hidden dark:block" />
                 <TC
                     className={clsx(
                         'absolute bottom-0 right-6',
@@ -198,13 +197,13 @@ export const ProjectsIntroComponent = () => {
         <>
             <Card
                 className={clsx([
-                    'border-none shadow-md h-96 w-80 bg-white dark:bg-background dark:shadow-slate-800',
+                    'h-96 w-80 border-none bg-white shadow-md dark:bg-background dark:shadow-slate-800',
                     'z-10',
-                    'hover:scale-105 duration-300',
+                    'duration-300 hover:scale-105',
                 ])}
             >
                 <img
-                    className="rounded-t-lg h-1/2 w-full"
+                    className="h-1/2 w-full rounded-t-lg"
                     src={projectIntroOne.thumbnail}
                 />
                 <CardHeader>
@@ -218,13 +217,13 @@ export const ProjectsIntroComponent = () => {
             </Card>
             <Card
                 className={clsx([
-                    'border-none shadow-md h-96 w-80 bg-white dark:bg-background dark:shadow-slate-800',
-                    'absolute rotate-6 lg:rotate-12 lg:-translate-y-8 lg:translate-x-10',
-                    'hover:scale-105 duration-300',
+                    'h-96 w-80 border-none bg-white shadow-md dark:bg-background dark:shadow-slate-800',
+                    'absolute rotate-6 lg:-translate-y-8 lg:translate-x-10 lg:rotate-12',
+                    'duration-300 hover:scale-105',
                 ])}
             >
                 <img
-                    className="rounded-t-lg h-1/2 w-full"
+                    className="h-1/2 w-full rounded-t-lg"
                     src={projectIntroTwo.thumbnail}
                 />
                 <CardHeader>
@@ -233,7 +232,7 @@ export const ProjectsIntroComponent = () => {
                     </CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm">
-                    <p className="antialiased text-slate-950/70 dark:text-slate-100/70">
+                    <p className="text-slate-950/70 antialiased dark:text-slate-100/70">
                         {projectIntroTwo.description}
                     </p>
                 </CardContent>

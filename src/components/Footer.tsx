@@ -44,10 +44,10 @@ const socials: SocialType[] = [
 const Footer = () => {
     return (
         <>
-            <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700 w-3/6 mx-auto mt-10" />
+            <hr className="mx-auto mt-10 h-px w-full border-0 bg-gray-200 dark:bg-gray-700 lg:w-3/6" />
 
-            <div className="py-10">
-                <div className="flex justify-center items-center space-x-4 mb-8">
+            <div id="footer" className="py-10">
+                <div className="mb-8 flex items-center justify-center space-x-4">
                     {links.map((x, key) => {
                         return (
                             <UnstyledLink
@@ -60,7 +60,7 @@ const Footer = () => {
                         )
                     })}
                 </div>
-                <div className="flex justify-center items-center mb-8">
+                <div className="mb-8 flex items-center justify-center">
                     <div>
                         <div className="mb-4 text-center text-base">
                             Reach me out
@@ -80,7 +80,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center text-base">
+                <div className="flex items-center justify-center text-base">
                     © Zulzario Zaeri {new Date().getFullYear()}
                 </div>
             </div>

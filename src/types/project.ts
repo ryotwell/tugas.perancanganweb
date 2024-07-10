@@ -26,3 +26,8 @@ export type IconMap = {
         name: string
     }
 }
+
+export type CardLinkProps = {
+    children: React.ReactNode,
+    url?: string
+}

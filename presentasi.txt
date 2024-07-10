@@ -9,14 +9,15 @@ Membangun Identitas Profesional
 Aksesibilitas Global
 
 Tech Stack:
-NextJS - https://nextjs.org
+NextJS      - https://nextjs.org
 TailwindCSS - https://tailwindcss.com
 
 Library:
-next-themes - https://www.npmjs.com/package/next-themes
-aos - https://michalsnik.github.io/aos
-uishadcn - https://ui.shadcn.com
-uiaceternity - https://ui.aceternity.com
+next-themes     - https://www.npmjs.com/package/next-themes
+aos             - https://michalsnik.github.io/aos
+uishadcn        - https://ui.shadcn.com
+uiaceternity    - https://ui.aceternity.com
+react-icons     - https://react-icons.github.io/react-icons
 
 Fitures:
 Dark Mode, Responsive Design, Animation

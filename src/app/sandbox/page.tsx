@@ -1,10 +1,7 @@
 import * as React from 'react'
 
 function Sandbox() {
-    return (
-        <>
-        </>
-    )
+    return <></>
 }
 
 export default Sandbox

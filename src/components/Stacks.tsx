@@ -7,12 +7,15 @@ import {
 } from '@/components/ui/tooltip'
 import {
     SiExpress,
+    SiFlutter,
+    SiGit,
     SiLaravel,
     SiNextdotjs,
     SiReact,
     SiSocketdotio,
     SiTailwindcss,
     SiTypescript,
+    SiVisualstudiocode,
 } from 'react-icons/si'
 import { IconMap, StacksProps } from '@/types/project'
 
@@ -44,6 +47,19 @@ export const icons: IconMap = {
     Socketio: {
         icon: SiSocketdotio,
         name: 'Socket.io',
+    },
+    Flutter: {
+        icon: SiFlutter,
+        name: 'Flutter',
+    },
+
+    Git: {
+        icon: SiGit,
+        name: 'Git',
+    },
+    Visualstudiocode: {
+        icon: SiVisualstudiocode,
+        name: 'Visual Studio Code',
     },
 }
 
@@ -78,7 +94,7 @@ const Stacks: React.FC<StacksProps> = ({ tech_stack, icon_size = 25 }) => {
                             <TooltipTrigger>
                                 <IconComponent
                                     size={icon_size}
-                                    className="hover:text-primary-300 duration-300"
+                                    className="duration-300 hover:text-primary-300"
                                 />
                             </TooltipTrigger>
                             <TooltipContent>

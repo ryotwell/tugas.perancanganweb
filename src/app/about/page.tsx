@@ -3,36 +3,42 @@
 import Stacks, { icons } from '@/components/Stacks'
 import WithAnimation from '@/components/WithAnimation'
 
+const ArchivementsAndExperiences = [
+    'Juara 1 Lomba Kompetensi Siswa (LKS) Tingkat Provinsi Tahun 2022 (perwakilan SMKN 1 Selong)',
+    'Peserta Lomba Kompetensi Siswa (LKS) Tingkat Nasional Tahun 2022 (perwakilan NTB)',
+    'Magang di Komisi Pemilihan Umum (KPU) 2021',
+]
+
 const About = () => {
-    const iconKeys = Object.keys(icons).join(', ')
+    const iconKeys = Object.keys(icons).join(',')
 
     return (
         <WithAnimation>
             <div className="content mt-36">
                 <div className="mb-6" data-aos="fade-up" data-aos-delay="300">
-                    <h1 className="font-bold text-3xl">About</h1>
-                    <h1 className="font-bold text-4xl">Zulzario Zaeri</h1>
+                    <h1 className="text-3xl font-bold">About</h1>
+                    <h1 className="text-4xl font-bold">Zulzario Zaeri</h1>
                 </div>
                 <div
                     className="mb-10 lg:flex"
                     data-aos="fade-up"
                     data-aos-delay="400"
                 >
-                    <div className="w-3/6 block lg:hidden mb-6">
+                    <div className="mb-6 block w-3/6 lg:hidden">
                         <img
-                            className="w-full shadow-md rounded-md overflow-hidden"
+                            className="w-full overflow-hidden rounded-md shadow-md"
                             src="https://res.cloudinary.com/ryotwell/image/upload/q_auto,f_auto/ryotwell/about/mwczlpayiyl3yzedkbnq"
                         />
                     </div>
                     <div className="w-full space-y-6 pr-10">
                         <p className="max-w-2xl">
-                            Saya seorang Junior Web Developer dengan pengalaman
-                            dalam pengembangan aplikasi menggunakan berbagai
-                            teknologi dan framework. Keahlian utama saya
-                            meliputi PHP dengan framework Laravel, serta ReactJS
-                            dan NextJS untuk pengembangan frontend. Saya juga
-                            memiliki pengalaman dalam menggunakan Tailwind CSS
-                            untuk desain dan Git untuk kontrol versi.
+                            Saya seorang Junior Full-stack Web Developer dengan
+                            pengalaman dalam pengembangan aplikasi menggunakan
+                            berbagai teknologi dan framework. Keahlian utama
+                            saya meliputi PHP dengan framework Laravel, serta
+                            ReactJS dan NextJS untuk pengembangan frontend. Saya
+                            juga memiliki pengalaman dalam menggunakan Tailwind
+                            CSS untuk desain dan Git untuk kontrol versi.
                         </p>
                         <p className="max-w-2xl">
                             Sejak awal minat saya dalam dunia pemrograman, saya
@@ -52,27 +58,64 @@ const About = () => {
                             saya ikuti di masa depan.
                         </p>
                     </div>
-                    <div className="w-2/6 hidden lg:block">
+                    <div className="hidden w-2/6 lg:block">
                         <img
-                            className="w-full shadow-md rounded-md overflow-hidden"
+                            className="w-full overflow-hidden rounded-md shadow-md"
                             src="https://res.cloudinary.com/ryotwell/image/upload/q_auto,f_auto/ryotwell/about/mwczlpayiyl3yzedkbnq"
                         />
                     </div>
                 </div>
                 <div className="mb-20" data-aos="fade-up" data-aos-delay="500">
-                    <h1 className="font-bold text-3xl mb-4">Tech Stack</h1>
+                    <h1 className="mb-4 text-3xl font-bold">
+                        Tech Stack & Tools
+                    </h1>
                     <div className="space-x-4">
                         <Stacks tech_stack={iconKeys} icon_size={30} />
                     </div>
                 </div>
-                <div className="mb-20" data-aos="fade-up" data-aos-delay="500">
-                    <h1 className="font-bold text-4xl mb-4">Contact</h1>
+                <div className="mb-20" data-aos="fade-up" data-aos-delay="600">
+                    <h1 className="mb-4 text-4xl font-bold">
+                        Archivements & Experiences
+                    </h1>
+                    <p className="max-w-2xl">
+                        Beberapa Prestasi & Pengalaman yang saya highlight
+                        adalah:
+                    </p>
+                    <div>
+                        <ul className="list-disc p-4">
+                            {ArchivementsAndExperiences.map((x, key) => {
+                                return (
+                                    <li
+                                        key={key}
+                                        className="list-disc-primary max-w-2xl p-2 text-xl font-bold"
+                                    >
+                                        {x}
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                        <div className="flex space-x-4">
+                            <img
+                                src="https://res.cloudinary.com/ryotwell/image/upload/q_auto,f_auto/ryotwell/about/htsodmnap4fn4ljhma3j"
+                                alt="Certificates"
+                                className="w-1/2 rounded-md lg:w-1/6"
+                            />
+                            <img
+                                src="https://res.cloudinary.com/ryotwell/image/upload/q_auto,f_auto/ryotwell/about/hnyrocpmujjjmtf62yz6"
+                                alt="Certificates"
+                                className="w-1/2 rounded-md lg:w-1/6"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className="mb-20">
+                    <h1 className="mb-4 text-4xl font-bold">Contact</h1>
                     <p className="max-w-2xl">
                         {`Do contact me if you need my opinion about web development, especially frontend works. I’ll be happy to help! (find my email in the footer)`}
                     </p>
                 </div>
                 <div className="mb-20">
-                    <h1 className="font-bold text-4xl mb-4">Desktop</h1>
+                    <h1 className="mb-4 text-4xl font-bold">Desktop</h1>
                     <div className="w-full">
                         <div>
                             <img
