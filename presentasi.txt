@@ -1,34 +1,48 @@
 Web portofolio adalah situs web yang digunakan oleh individu atau perusahaan untuk memamerkan
-karya, keterampilan, proyek, dan pengalaman mereka. Web portofolio sering digunakan oleh para profesional kreatif,
-seperti desainer grafis, fotografer, pengembang web, penulis, dan lainnya, untuk menampilkan contoh pekerjaan mereka kepada calon klien,
-pemberi kerja, atau kolaborator.
+karya, keterampilan, proyek, dan pengalaman mereka. Web portofolio sering digunakan oleh para profesional kreatif, seperti desainer grafis,
+fotografer, pengembang web, penulis, dan lainnya, untuk menampilkan contoh pekerjaan mereka kepada calon klien, pemberi kerja, atau kolaborator.
 
-Mempresentasikan Karya/Project
-Meningkatkan Kredibilitas
-Membangun Identitas Profesional
-Aksesibilitas Global
+[+] Manfaat Web Portofolio:
+- Mempresentasikan Karya/Project
+- Meningkatkan Kredibilitas
+- Membangun Identitas Profesional
+- Aksesibilitas Global
 
-Tech Stack:
-NextJS      - https://nextjs.org
-TailwindCSS - https://tailwindcss.com
+[+] Tech Stack:
+- NextJS      - https://nextjs.org
+- ReactJS     - https://react.dev
+- TailwindCSS - https://tailwindcss.com
 
-Library:
-next-themes     - https://www.npmjs.com/package/next-themes
-aos             - https://michalsnik.github.io/aos
-uishadcn        - https://ui.shadcn.com
-uiaceternity    - https://ui.aceternity.com
-react-icons     - https://react-icons.github.io/react-icons
+[+] Library:
+- next-themes     - https://www.npmjs.com/package/next-themes
+- aos             - https://michalsnik.github.io/aos
+- uishadcn        - https://ui.shadcn.com
+- uiaceternity    - https://ui.aceternity.com
+- react-icons     - https://react-icons.github.io/react-icons
 
-Fitures:
-Dark Mode, Responsive Design, Animation
+[+] Fitures/Fitur:
+- Dark Mode
+- Animation
+- Responsive Design
+- Active State (di Navbar)
 
-Pages:
-Home, About, Projects
+[+] Pages/Halaman:
+- Home        /
+- About       /about
+- Projects    /projects
 
-Fleksibilitas dan Kustomisasi:
-Tailwind CSS memungkinkan tingkat kustomisasi yang lebih tinggi dengan utility-first approach.
-Pengguna dapat menulis gaya yang sangat spesifik tanpa harus menimpa kelas bawaan.
+- Apa itu TailwindCSS?
+Tailwind CSS merupakan framework CSS yang berbasis utility untuk membuat UI atau tampilan dari aplikasi web.
+Berbasis utility artinya Tailwind cuma terdiri dari 100% utility class dan nggak ada class
+komponen seperti Navbar, Button, Card, Modal, dll. Komponen-komponen ini kita buat sendiri dengan class utility.
+Sumber: https://www.petanikode.com/tailwind-dasar
 
-Ukuran File Lebih Kecil:
-Dengan Tailwind CSS, kamu hanya mengimpor utilitas yang kamu butuhkan. Hal ini bisa mengurangi
-ukuran file CSS secara signifikan jika dibandingkan dengan Bootstrap yang memiliki banyak komponen bawaan.
+- Apa itu Next.js?
+Next.js adalah framework open-source untuk membuat aplikasi web menggunakan bahasa pemrograman JavaScript. Sederhananya,
+Next.js memudahkan pengembangan aplikasi web dengan menyediakan sejumlah fitur dan fungsi yang dapat mempercepat proses pembuatan dan pengembangan.
+Sumber: https://www.biznetgio.com/news/apa-itu-next-js
+
+- Apa itu ReactJS?
+ReactJS atau React adalah library JavaScript populer buatan Facebook yang digunakan dalam proses pengembangan aplikasi mobile dan web.
+React berisi kumpulan snippet kode JavaScript (disebut ‘komponen’) yang bisa digunakan berulang kali untuk mendesain antarmuka pengguna.
+Sumber: https://www.hostinger.co.id/tutorial/apa-itu-react
