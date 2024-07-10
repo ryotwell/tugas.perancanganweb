@@ -1,5 +1,5 @@
 import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si'
-import UnstyledLink from '@/components/UnstyledLink'
+import UnstyledLink from '@/components/links/UnstyledLink'
 import { FiMail } from 'react-icons/fi'
 import { LinkType, SocialType } from '@/types/links'
 

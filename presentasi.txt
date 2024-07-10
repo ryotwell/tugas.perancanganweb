@@ -1,0 +1,33 @@
+Web portofolio adalah situs web yang digunakan oleh individu atau perusahaan untuk memamerkan
+karya, keterampilan, proyek, dan pengalaman mereka. Web portofolio sering digunakan oleh para profesional kreatif,
+seperti desainer grafis, fotografer, pengembang web, penulis, dan lainnya, untuk menampilkan contoh pekerjaan mereka kepada calon klien,
+pemberi kerja, atau kolaborator.
+
+Mempresentasikan Karya/Project
+Meningkatkan Kredibilitas
+Membangun Identitas Profesional
+Aksesibilitas Global
+
+Tech Stack:
+NextJS - https://nextjs.org
+TailwindCSS - https://tailwindcss.com
+
+Library:
+next-themes - https://www.npmjs.com/package/next-themes
+aos - https://michalsnik.github.io/aos
+uishadcn - https://ui.shadcn.com
+uiaceternity - https://ui.aceternity.com
+
+Fitures:
+Dark Mode, Responsive Design, Animation
+
+Pages:
+Home, About, Projects
+
+Fleksibilitas dan Kustomisasi:
+Tailwind CSS memungkinkan tingkat kustomisasi yang lebih tinggi dengan utility-first approach.
+Pengguna dapat menulis gaya yang sangat spesifik tanpa harus menimpa kelas bawaan.
+
+Ukuran File Lebih Kecil:
+Dengan Tailwind CSS, kamu hanya mengimpor utilitas yang kamu butuhkan. Hal ini bisa mengurangi
+ukuran file CSS secara signifikan jika dibandingkan dengan Bootstrap yang memiliki banyak komponen bawaan.

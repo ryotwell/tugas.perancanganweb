@@ -1,11 +1,11 @@
 import { IconType } from 'react-icons'
 
 export type LinkType = {
-    label: string,
-    url: string,
+    label: string
+    url: string
 }
 
 export type SocialType = {
-    icon: IconType,
-    url: string,
+    icon: IconType
+    url: string
 }

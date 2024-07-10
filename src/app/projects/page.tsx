@@ -9,8 +9,12 @@ const AllProjects = () => {
             <div className="content mt-36">
                 <div className="mb-6" data-aos="fade-up" data-aos-delay="300">
                     <div className="mb-6">
-                        <h1 className="font-bold text-4xl text-primary">Projects</h1>
-                        <p>Showcase of my works on full-stack web developer.</p>
+                        <h1 className="font-bold text-4xl text-primary">
+                            Projects
+                        </h1>
+                        <p className="antialiased text-slate-950/70 dark:text-slate-100/70">
+                            Showcase of my works on full-stack web developer.
+                        </p>
                     </div>
                     <ul className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {projects.map((x, key) => {

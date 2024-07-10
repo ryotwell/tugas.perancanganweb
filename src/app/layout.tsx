@@ -5,6 +5,7 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 const fontSans = FontSans({
     subsets: ['latin'],
@@ -26,19 +27,15 @@ export default function RootLayout({
             <body
                 className={cn(
                     'min-h-screen bg-background font-sans antialiased',
-                    'transition-colors bg-white',
+                    'transition-colors',
                     fontSans.variable,
                 )}
             >
-                {/* <ProgressBar
-                    height="4px"
-                    color="#fffd00"
-                    options={{ showSpinner: false }}
-                    shallowRouting
-                /> */}
-                <Header />
-                <main className="mt-20 lg:mt-20">{children}</main>
-                <Footer />
+                <ThemeProvider attribute="class" defaultTheme="dark">
+                    <Header />
+                    <main className="mt-20 lg:mt-20">{children}</main>
+                    <Footer />
+                </ThemeProvider>
             </body>
         </html>
     )

@@ -3,7 +3,7 @@ import React from 'react'
 import { ProjectsProps, ProjectType } from '@/types/project'
 import Stacks from './Stacks'
 import clsx from 'clsx'
-import UnstyledLink from './UnstyledLink'
+import UnstyledLink from './links/UnstyledLink'
 
 export const projects: ProjectType[] = [
     {
@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectsProps> = ({
         <UnstyledLink href={url as string} openNewTab={true}>
             <Card
                 className={clsx([
-                    'bg-white border-none shadow-md hover:scale-105 duration-300',
+                    'border-none shadow-md hover:scale-105 duration-300 bg-white dark:bg-background dark:shadow-slate-800',
                     className,
                 ])}
                 {...props}
@@ -55,7 +55,9 @@ const ProjectCard: React.FC<ProjectsProps> = ({
                     <div className="mb-6 flex space-x-4">
                         <Stacks tech_stack={tech_stack} icon_size={icon_size} />
                     </div>
-                    <p>{description}</p>
+                    <p className="antialiased text-slate-950/70 dark:text-slate-100/70">
+                        {description}
+                    </p>
                 </CardContent>
             </Card>
         </UnstyledLink>

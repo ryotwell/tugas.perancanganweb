@@ -1,6 +1,19 @@
 import * as React from 'react'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import { SiExpress, SiLaravel, SiNextdotjs, SiReact, SiSocketdotio, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '@/components/ui/tooltip'
+import {
+    SiExpress,
+    SiLaravel,
+    SiNextdotjs,
+    SiReact,
+    SiSocketdotio,
+    SiTailwindcss,
+    SiTypescript,
+} from 'react-icons/si'
 import { IconMap, StacksProps } from '@/types/project'
 
 export const icons: IconMap = {
@@ -65,7 +78,7 @@ const Stacks: React.FC<StacksProps> = ({ tech_stack, icon_size = 25 }) => {
                             <TooltipTrigger>
                                 <IconComponent
                                     size={icon_size}
-                                    className="text-slate-600 hover:text-primary duration-300"
+                                    className="hover:text-primary-300 duration-300"
                                 />
                             </TooltipTrigger>
                             <TooltipContent>

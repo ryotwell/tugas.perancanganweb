@@ -1,17 +1,17 @@
 'use client'
 
-import Stacks from '@/components/Stacks'
+import Stacks, { icons } from '@/components/Stacks'
 import WithAnimation from '@/components/WithAnimation'
 
-function About() {
+const About = () => {
+    const iconKeys = Object.keys(icons).join(', ')
+
     return (
         <WithAnimation>
             <div className="content mt-36">
                 <div className="mb-6" data-aos="fade-up" data-aos-delay="300">
                     <h1 className="font-bold text-3xl">About</h1>
-                    <h1 className="font-bold text-4xl text-primary">
-                        Zulzario Zaeri
-                    </h1>
+                    <h1 className="font-bold text-4xl">Zulzario Zaeri</h1>
                 </div>
                 <div
                     className="mb-10 lg:flex"
@@ -62,10 +62,7 @@ function About() {
                 <div className="mb-20" data-aos="fade-up" data-aos-delay="500">
                     <h1 className="font-bold text-3xl mb-4">Tech Stack</h1>
                     <div className="space-x-4">
-                        <Stacks
-                            tech_stack="Laravel,React,Expressjs,Nextjs,Tailwindcss,Typescript,Socketio"
-                            icon_size={30}
-                        />
+                        <Stacks tech_stack={iconKeys} icon_size={30} />
                     </div>
                 </div>
                 <div className="mb-20" data-aos="fade-up" data-aos-delay="500">
