@@ -31,6 +31,10 @@ fotografer, pengembang web, penulis, dan lainnya, untuk menampilkan contoh peker
 - About       /about
 - Projects    /projects
 
+[+] Menjalankan local development server
+Sebelum menjalankan project, install terlebih dahulu dependencies, ketik di terminal:
+`npm install && npm run dev`
+
 - Apa itu TailwindCSS?
 Tailwind CSS merupakan framework CSS yang berbasis utility untuk membuat UI atau tampilan dari aplikasi web.
 Berbasis utility artinya Tailwind cuma terdiri dari 100% utility class dan nggak ada class
